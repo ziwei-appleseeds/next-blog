@@ -34,7 +34,7 @@ export default function Home() {
         {posts?.data ? (
           posts.data.map((item) => (
             <h2 key={item.id}>
-              <Link href={`/posts/${item.id}`}>{item.title}</Link>
+              <Link href={"/posts/" + item.id}>{item.title}</Link>
             </h2>
           ))
         ) : (
